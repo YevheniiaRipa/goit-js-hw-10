@@ -3,14 +3,23 @@
   display: inline-block;
   padding: 4px 8px;
   margin-top: 20px;
-  border: 1px solid;
   border-radius: 8px;
+  transition: background-color 300ms ease-in, color 300ms ease-in;
+  background-color: #fc9541;
+  font-weight: 700;
+  color: #ffffff;
 }
+
+.back-link:hover {
+  color: #000000;
+  background-color: #ff7300;
+}
+
 .back-link::before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 25%;
+  right: 100%;
   width: 16px;
   height: 16px;
 
