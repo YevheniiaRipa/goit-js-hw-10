@@ -1,5 +1,7 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import checkIcon from '/img/check.svg';
+import crossIcon from '/img/cross.svg';
 
 const form = document.querySelector('.form');
 
@@ -29,7 +31,7 @@ function handleSubmit(event) {
         title: 'Yep!!!',
         titleColor: '#ffffff',
         message: `Fulfilled promise in ${delay}ms`,
-        iconUrl: '/img/check.svg',
+        iconUrl: checkIcon,
         messageColor: '#ffffff',
         backgroundColor: '#59a10d',
         position: 'topRight',
@@ -45,7 +47,7 @@ function handleSubmit(event) {
         title: 'Oops!',
         titleColor: '#ffffff',
         message: `Rejected promise in ${delay}ms`,
-        iconUrl: '/img/cross.svg',
+        iconUrl: crossIcon,
         messageColor: '#ffffff',
         backgroundColor: '#ef4040',
         position: 'topRight',

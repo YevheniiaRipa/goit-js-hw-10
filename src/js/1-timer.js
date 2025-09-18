@@ -2,6 +2,8 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import checkIcon from '/img/check.svg';
+import crossIcon from '/img/cross.svg';
 
 const datetimePicker = document.querySelector('.datetime-picker');
 const startButton = document.querySelector('button[data-start]');
@@ -26,7 +28,7 @@ const options = {
         message: 'Please choose a date in the future',
         messageColor: '#ffffff',
         backgroundColor: '#ef4040',
-        iconUrl: '/img/cross.svg',
+        iconUrl: crossIcon,
         position: 'topRight',
         iconColor: 'white',
         close: false,
@@ -92,7 +94,7 @@ function startCountdown() {
 
       iziToast.success({
         message: 'Time іs up!',
-        iconUrl: '/img/check.svg',
+        iconUrl: checkIcon,
         messageColor: '#ffffff',
         backgroundColor: '#59a10d',
         position: 'topRight',
